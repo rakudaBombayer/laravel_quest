@@ -20,6 +20,7 @@
                             <li class="tag-default tag-pill tag-outline">{{ $tag }}</li>
                         @endforeach
                     </ul>
+                    <a href="{{ route('article.edit', $article->id) }}" class="btn btn-primary">Edit Article</a>
                 </div>
             </div>
         </div>
