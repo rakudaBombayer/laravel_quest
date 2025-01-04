@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="//demo.productionready.io/main.css" />
 <div class="article-page">
   <div class="banner">
     <div class="container">
