@@ -51,4 +51,9 @@ class ArticlesController extends Controller
             return redirect()->route('home');
         }
         
+        public function destroy($id) 
+        { 
+            $article = Article::findOrFail($id); $article->delete(); return redirect()->route('home'); 
+        }
+        
 }

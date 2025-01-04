@@ -21,6 +21,10 @@
                         @endforeach
                     </ul>
                     <a href="{{ route('article.edit', $article->id) }}" class="btn btn-primary">Edit Article</a>
+                    <form action="{{ route('article.destroy', $article->id) }}" method="POST" style="display:inline;"> 
+                      @csrf @method('DELETE') 
+                      <button class="btn btn-danger" type="submit">Delete Article</button> 
+                    </form>
                 </div>
             </div>
         </div>
